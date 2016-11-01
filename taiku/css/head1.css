@@ -1,0 +1,38 @@
+/*头部*/
+.head_wrap{height: 35px;width: 100%;background: #484c55;  margin: 0 auto;max-width: 1700px;min-width: 1200px;}
+.head_wrap .head{height: 35px;width: 1140px;margin: 0 auto;font-size: 12px;}
+
+.head_wrap .chinese{color: #FFFFFF;cursor: pointer;}
+.head_wrap .English{cursor: pointer;}
+.head_wrap ul{float: right;height: 35px;line-height: 35px;color:rgba(255,255,255,0.5)}
+.head_wrap ul li{float: left;margin-left:30px;list-style: none;height: 35px;}
+.head_wrap ul img{display: inline-block;width: 16px;height: 16px;margin-top: 10px;float: left;}
+.head_wrap ul p{display: inline-block;padding-left: 9px;height: 35px;line-height: 35px;float: left;}
+.head_wrap ul .img{width: 12px;height: 16px;}
+.head_wrap a{color: rgba(255,255,255,0.5);}
+.head_wrap .two_code{position: relative;}
+.head_wrap .code{display:none;position:absolute;top: 40px;left:-60px;height:276px;width:190px;z-index: 20;background: url(../img/code11.png) no-repeat left top; background-size:cover ;}
+.head_wrap .code_c{margin-top:5.5px;}
+.head_wrap .top{overflow:hidden;width: 150px;margin:0 auto;height: 103px;border-bottom: 1px dashed #ccc;}
+.head_wrap ul .top dl{width: 55px;height: 72px;margin: 10px auto; }
+.head_wrap ul .top dl dt{width: 55px; height:55px;border:1px solid #CCCCCC;border-radius: 3px;padding-left: 1px;}
+.head_wrap ul .top img{width: 50px;height: auto;margin-top: 0;}
+.head_wrap .top dd{text-align: center;font-size: 12px;color: #000000;}
+.head_wrap .bottom{width: 107px;height: 150px;margin: 13px auto;}
+.head_wrap ul .bottom img{width: 107px;height: 107px;margin-top: 0;}
+.head_wrap .bottom dd{text-align: center;font-size: 12px;color: #000000;}
+.head_wrap ul li:nth-child(3){
+	display: none;
+}
+
+/*导航*/
+.hideNav{box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);z-index:100;background:#FFFFFF;width: 100%;height: 55px;margin: 0 auto;max-width: 1700px;min-width: 1200px; }
+.hideWrap{width:1140px;margin: 0 auto;}
+.hideNav .left{width:270px;height: 55px;float: left;line-height: 55px;color: #ececec;font-size：12px;}
+.hideNav .left img{cursor:pointer;display: inline-block;width: auto;height: 28px;margin-top: 13px;padding-right: 15px;float: left;}
+.hideNav .left p{font-size:12px;margin-right:34px;line-height: 55px;height: 55px;float: right;color: #999999;padding-top: 2px;}
+.hideNav ul{ float:right;height: 55px;}
+.hideNav ul li{float: left;list-style: none;line-height: 50px;margin-top:2px;height：55px;margin-left: 60px;}
+.hideNav ul li a{text-decoration: none;color:#333333;font-size: 14px;}
+.hideNav ul li:hover {border-bottom: 2px solid #ffaa3c;}
+.navChange_style{border-bottom: 2px solid #ffaa3c;}

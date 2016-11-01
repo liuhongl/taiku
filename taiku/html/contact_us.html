@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<script type="t ext/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+ <!--百度地图生成-->
+		<style type="text/css">
+			.iw_poi_title {
+				color: #CC5522;
+				font-size: 14px;
+				font-weight: bold;
+				overflow: hidden;
+				padding-right: 13px;
+				white-space: nowrap
+			}
+			.iw_poi_content {
+				font: 12px arial, sans-serif;
+				overflow: visible;
+				padding-top: 4px;
+				white-space: -moz-pre-wrap;
+				word-wrap: break-word
+			}
+		</style>
+<body>
+	<div class="wrapper">
+		<div class="contact_us">
+			<div class="top">
+						<p>联系我们</p>
+						<img src="../img/underline_yellow.png">	
+			</div>
+			<div class="map">
+				<div class="r" style="width: 100%; height: 280px;" id="dituContent"></div>
+			</div>
+		</div>
+		<div class="contact_content">
+			<div>
+				<div class="top">
+					<h2>太库 北京</h2>
+					<p class="CC_P1">北京市海淀区科学院路2号融科资讯中心B座11层</p>
+				</div>
+				<p class="CC_p2">檀先生<span>商务合作</span></p>
+				<p class="CC_p3">010-59222999<span>010-56343666 </span></p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 深圳</h2>
+					<p class="CC_P1">深圳市南山区后海大道2388号怡化金融大厦18F</p>
+				</div>
+				<p class="CC_p2">张女士<span>商务合作</span></p>
+				<p class="CC_p3">13714092855 </p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 硅谷</h2>
+					<p class="CC_P1">硅谷地区山景城卡斯楚街1172号</p>
+				</div>
+				<p class="CC_p2">葛女士<span>商务合作</span></p>
+				<p class="CC_p3">+1（650）316-7700 </p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 固安</h2>
+					<p class="CC_P1">河北省廊坊市固安县科技大道肽谷生物医药产业园</p>
+				</div>
+				<p class="CC_p2">常先生<span>商务合作</span></p>
+				<p class="CC_p3">15801114709</p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 南京</h2>
+					<p class="CC_P1">南京市玄武区珠江路488号未来城A1座2层</p>
+				</div>
+				<p class="CC_p2">刘女士<span>商务合作</span></p>
+				<p class="CC_p3">13851563437</p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 柏林</h2>
+					<p class="CC_P1">Berlin,Karl-Liebknecht-str.5,10178</p>
+				</div>
+				<p class="CC_p2">王先生<span>商务合作</span></p>
+				<p class="CC_p3">+49 30 8145 7740</p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 首尔</h2>
+					<p class="CC_P1">韩国首尔江南区德黑兰路306号凯特大厦8层</p>
+				</div>
+				<p class="CC_p2">具先生<span>商务合作</span></p>
+				<p class="CC_p3">（+82）10 73872013</p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 特拉维夫</h2>
+					<p class="CC_P1">Lilienblun35,Tel Aviv</p>
+				</div>
+				<p class="CC_p2">郑女士<span>商务合作</span></p>
+				<p class="CC_p3">+972-77-9981320</p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 香河</h2>
+					<p class="CC_P1">香河经济技术开发区安晟街机器人产业园D1座</p>
+				</div>
+				<p class="CC_p2">王先生<span>商务合作</span></p>
+				<p class="CC_p3">15120097315</p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 上海</h2>
+					<p class="CC_P1">上海市浦东新区金科路2889弄3号长泰广场C座11 -12F</p>
+				</div>
+				<p class="CC_p2">刘女士<span>商务合作</span></p>
+				<p class="CC_p3">15221509190</p>
+			</div>
+
+			<div>
+				<div class="top">
+					<h2>太库 嘉善</h2>
+					<p class="CC_P1">浙江省嘉善县创业路 555号（上海人才创业园） E5号楼</p>
+				</div>
+				<p class="CC_p2">朱先生<span>商务合作</span></p>
+				<p class="CC_p3">13738095509</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+		<script type="text/javascript">
+			 //创建和初始化地图函数：
+			function initMap() {
+					createMap(); //创建地图
+					setMapEvent(); //设置地图事件
+					addMapControl(); //向地图添加控件
+					addMarker(); //向地图中添加marker
+				}
+				//创建地图函数：
+
+			function createMap() {
+					var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+					var point = new BMap.Point(116.332917, 39.990231); //定义一个中心点坐标
+					map.centerAndZoom(point, 18); //设定地图的中心点和坐标并将地图显示在地图容器中
+					window.map = map; //将map变量存储在全局
+				}
+				//地图事件设置函数：
+
+			function setMapEvent() {
+					map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+					map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+					map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+					map.enableKeyboard(); //启用键盘上下左右键移动地图
+				}
+				//地图控件添加函数：
+
+			function addMapControl() {
+					//向地图中添加缩放控件
+					var ctrl_nav = new BMap.NavigationControl({
+						anchor: BMAP_ANCHOR_TOP_LEFT,
+						type: BMAP_NAVIGATION_CONTROL_LARGE
+					});
+					map.addControl(ctrl_nav);
+					//向地图中添加缩略图控件
+					var ctrl_ove = new BMap.OverviewMapControl({
+						anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+						isOpen: 1
+					});
+					map.addControl(ctrl_ove);
+					//向地图中添加比例尺控件
+					var ctrl_sca = new BMap.ScaleControl({
+						anchor: BMAP_ANCHOR_BOTTOM_LEFT
+					});
+					map.addControl(ctrl_sca);
+				}
+				//标注点数组
+			var markerArr = [{
+				title: "太库  北京",
+				content: "北京市海淀区科学院南路2号融科资讯中心B座11层",
+				point: "116.332966|39.990486",
+				isOpen: 1,
+				icon: {
+					w: 23,
+					h: 25,
+					l: 23,
+					t: 21,
+					x: 9,
+					lb: 12
+				}
+			}];
+			 //创建marker
+			function addMarker() {
+					for (var i = 0; i < markerArr.length; i++) {
+						var json = markerArr[i];
+						var p0 = json.point.split("|")[0];
+						var p1 = json.point.split("|")[1];
+						var point = new BMap.Point(p0, p1);
+						var iconImg = createIcon(json.icon);
+						var marker = new BMap.Marker(point, {
+							icon: iconImg
+						});
+						var iw = createInfoWindow(i);
+						var label = new BMap.Label(json.title, {
+							"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)
+						});
+						marker.setLabel(label);
+						map.addOverlay(marker);
+						label.setStyle({
+							borderColor: "#808080",
+							color: "#333",
+							cursor: "pointer"
+						});
+						(function() {
+							var index = i;
+							var _iw = createInfoWindow(i);
+							var _marker = marker;
+							_marker.addEventListener("click", function() {
+								this.openInfoWindow(_iw);
+							});
+							_iw.addEventListener("open", function() {
+								_marker.getLabel().hide();
+							})
+							_iw.addEventListener("close", function() {
+								_marker.getLabel().show();
+							})
+							label.addEventListener("click", function() {
+								_marker.openInfoWindow(_iw);
+							})
+							if (!!json.isOpen) {
+								label.hide();
+								_marker.openInfoWindow(_iw);
+							}
+						})()
+					}
+				}
+				//创建InfoWindow
+
+			function createInfoWindow(i) {
+					var json = markerArr[i];
+					var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+					return iw;
+				}
+				//创建一个Icon
+
+			function createIcon(json) {
+				var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), {
+					imageOffset: new BMap.Size(-json.l, -json.t),
+					infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+					offset: new BMap.Size(json.x, json.h)
+				})
+				return icon;
+			}
+			initMap(); //创建和初始化地图
+		</script>
+</body>
+</html>

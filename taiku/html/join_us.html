@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加入我们</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="join_banner">
+			<p class="p1">太库职位</p>
+			<form>
+				<p class="join_search">
+					<span><img src="../img/join_us/search.jpg" alt=""></span>
+					<input type="text" placeholder="请输入药品、靶点、公司、疾病">
+				</p>
+			</form>
+		</div>
+		<div class="join_contentWrap">
+			<div class="join_content">
+				<div class="left">
+					<h2 class="select">全部职位<a href="##">更多筛选&gt; &gt;</a></h2>
+					<div class="screen">
+						<div class="location">
+							<i>工作地点：</i>
+							<span>
+								<a href="#">北京</a>
+								<a href="#">上海</a>
+								<a href="#">深圳</a>
+								<a href="#">固安</a>
+								<a href="#">硅谷</a>
+								<a href="#">柏林</a>
+								<a href="#">首尔</a>
+								<a href="#">特拉维夫</a>
+							</span>
+						</div>
+
+						<div class="category">
+							<b>职位类别：</b>
+							<span>
+								<a href="##" >IT</a>
+								<a href="##">人力资源</a>
+								<a href="#">公司事务</a>
+								<a href="##">培训</a>
+								<a href="##" >工程建设</a>
+								<a href="#" >法务</a>
+								<a href="#" >综合管理</a>
+								<a href="#" >行政</a>
+								<a href="#" >采购</a>
+								<a href="#" >财务及内控</a>
+								<a href="#">商业拓展</a>
+								<a href="#" >市场推广</a>
+								<a href="#">数据分析</a>
+								<a href="#" >产品运营</a>
+								<a href="#">孵化器总经理</a>
+							</span>	
+						</div>
+					</div>
+					<ul class="position">
+						<li>
+							<h2><a href="##">太库--孵化器管理中心-运营管理人员</a></h2>
+							<p>地点:北京<i>职位：商务拓展</i><b>招聘人数：2</b><span>2016-09-09</span></p>
+						</li>
+
+
+					</ul>
+					<ul class="page">
+						<li><a href="##">&lt;上一页</a></li> 
+						<li><a href="##"> 1 </a></li> 
+						<li><a href="##">2</a></li>
+						<li><a href="##">3</a></li>
+						<li><a href="##">4</a></li>
+						<li><a href="##">下一页&gt;</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="right_c">
+						<h2>最新职位</h2>
+						<ul>
+							<li>
+								<a href="#">太库－海外应付会计</a><br/><span>8分钟前</span>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/jquery-1.12.3.js" ></script>
+	<script>
+
+		var mark = true;
+		var change = true
+		$(".location a").click(function(){
+			if (mark==true) {
+				$(this).addClass("location_changeStyle");
+			}else{
+				$(this).removeClass("location_changeStyle");
+			}
+
+			mark = !mark;
+		})
+		$(".category a").click(function(){
+			if (change==true) {
+				$(this).addClass("category_changeStyle");
+			}else{
+				$(this).removeClass("category_changeStyle");
+			}
+
+			change = !change;
+		})
+		//更多筛选
+		$(".select a").click(function(){
+			$(".screen").show();
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minmum-scale=1,maximum-scale=1,use-scalable=no" />	
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link  media="screen and (min-device-width:901px)" rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link  media="screen and (min-device-width:300px) and (max-device-width:900px)" rel="stylesheet" type="text/css"  href="../css/H5.css" />
+		
+	</head>  
+	<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/html5shiv.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<div class="wrapper">
+			<div class="h5_head">
+			<a href="http://www.techcode.com/"><img src="../img/litter_avtive/logo.png"></a>
+			</div>
+			<div class="BPbanner"></div>
+			<div class="BPcontent">
+				<form action="" method="post">
+					<dl>
+						<dt><img src="../img/litter_avtive/1.png" /><span><i>*</i> 项目名称：</span></dt>
+						<dd><input type="text" placeholder="例如：创业工坊"> <span class="project">请填写项目名称</span></dd>
+					</dl>
+					<div class="clear">
+						
+					</div>
+					<dl>
+						<dt><img src="../img/litter_avtive/2.png" /><span><i>*</i> 项目地点：</span></dt>
+						<dd>
+							<select name="P1"></select><select name="C1"></select>
+							<select name="A1"></select>
+							<span class="ProLoca">请填写项目所在地</span></dd>
+					</dl>
+					<div class="clear">
+						
+					</div>
+					<dl>
+						<dt><img src="../img/litter_avtive/3.png" /><span class="intd">项目介绍：</span></dt>
+						<dd>
+							<textarea name="message" placeholder="例如：创意工坊是针对艺术创意的......"></textarea> 
+							<p class="jishu"><i class="number">0</i>/<i class="rest">200</i></p>
+							
+						</dd>
+					</dl>
+					<div class="clear">
+						
+					</div>
+					<dl class="up">
+						<dt><img src="../img/litter_avtive/4.png" /><span><i>*</i> 上传我的BP：</span></dt>
+						<dd class="upFile"><input type="file"> <i>格式只能是PDF或PPT/PPTX,8M以内文档</i><span class="file">请上传项目BP</span></dd>
+					</dl>
+					<div class="clear">
+						
+					</div>
+					<input type="button" value="提交BP"/>
+					
+				</form>
+
+			</div>
+			<div class="layer">
+				<div class="BPtip">
+						<p>提交成功</p>
+						<input type="button" value="确定">
+						<input type="button" value="取消">
+				</div>
+			</div>
+		</div>
+		
+		<script src="../js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="../js/PCASClass.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/submitBP.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

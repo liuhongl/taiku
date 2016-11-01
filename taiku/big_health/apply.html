@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minmum-scale=1,maximum-scale=1,use-scalable=no" />	
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://www.techcode.com/statics/taiku/v1/css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="http://www.techcode.com/statics/taiku/v1/css/animate.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="http://www.techcode.com/statics/taiku/v1/css/head.css"/>
+	<link rel="stylesheet" type="text/css" href="http://www.techcode.com/statics/taiku/v1/css/footer.css"/>
+
+	<link  media="screen and (min-device-width:901px)" rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link  media="screen and (min-device-width:300px) and (max-device-width:900px)" rel="stylesheet" type="text/css"
+       href="css/H5.css"/>
+
+
+	<script type="text/javascript" src="http://www.techcode.com/statics/taiku/v1/js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="http://www.techcode.com/statics/taiku/v1/js/common1.js"></script>
+
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--pc头部-->	
+		<div class="head_wrap">
+		<div class="head">
+			<ul>
+			<li><img src="http://www.techcode.com/statics/taiku/v1/img/globalR.png" alt=""><p><span class="chinese">中文</span> / <span class="English">EN</span></p></li>
+			<li class="two_code">
+				<img class="img" src="http://www.techcode.com/statics/taiku/v1/img/phoneR.png" alt=""><p>客户端</p>
+				<div class="code">
+					<div class="code_c">
+						<div class="top">
+							<dl>
+								<dt><img class="logo_l" src="http://www.techcode.com/statics/taiku/v1/img/litter_logo.jpg"></dt>
+								<dd>太库</dd>
+							</dl>
+						</div>
+						<div class="bottom">
+							<dl>
+								<dt><img src="http://www.techcode.com/statics/taiku/v1/img/code.png"></dt>
+								<dd>iPhone&Android</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li><img src="http://www.techcode.com/statics/taiku/v1/img/loginR.png" alt="">
+				<p><a href="#">注册</a>
+					/
+					<a href="#">登录</a>
+				</p></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--pc导航-->
+	<div class="hideNav activeNav">
+		<div class="hideWrap">
+			<div class="left">
+					<a href="/"><img src="http://www.techcode.com/statics/taiku/v1/img/hidellogo.png" alt="logo"></a>|<p>创业者国度</p>
+			</div>
+			<ul>
+				<li><a href="http://www.techcode.com" >首页</a></li>
+				<li><a href="http://www.techcode.com/index.php?m=content&c=index&a=lists&catid=11">全球网络</a></li>
+				<li ><a href="http://www.techcode.com/index.php?m=content&c=index&a=lists&catid=10">资源整合</a></li>
+				<li ><a href="http://www.techcode.com/index.php?m=content&c=taiku_activty&a=list_activity&catid=8">太库活动</a></li>
+				<li ><a href="http://www.techcode.com/index.php?m=content&c=taiku_news&a=list_news&catid=7">太库新闻</a></li>
+				<li ><a href="http://www.techcode.com/index.php?m=content&c=tc_newlook&a=init&catid=45">库眼看世界</a></li>
+				<li ><a href="http://www.techcode.com/index.php?m=content&c=index&a=lists&catid=55">GIIP</a></li>
+			</ul>
+		</div>	
+	</div>
+	<!--h5 head-->
+		<div class="h5_head"></div>
+	<!--h5 head END-->
+	<div class="aBanner">
+			<h2>报名申请表</h2>
+			<p class="p1">太库以色列大健康加速器</p>
+			<div class="contact">
+				<p class="p2">同时请将您项目的介绍发至邮箱<span> medtech@techcode.com</span> </p>
+				
+			</div>	
+	</div>
+	<div class="apyContent">
+		<h3>欢迎填写这份申请表，我们将尽快联系到您！</h3>
+		<p class="p1">太库的大健康全球加速器旨在帮助全球的大健康领域技术创新公司加速成长以及扩大市场规模。</p>
+		<p class="p2">我们的加速项目共为期3个月，从2016年11月至2017年1月，期间将安排7天的考察，与全球范围内的投资者，大型药品、器械和医疗技术公司，高级政府官员等会面。只有在您企业获得重大突破或进展时，我们才收取相应服务费。</p>
+		<form action="/api/sub_activity/apply" method="post"  id="post_form">
+			<div class="apyTop">
+							<dl>
+								<dt>公司名称</dt>
+								<dd><label><input type="text" placeholder="请输入公司名称" name="companyName"/></label> </dd>
+							</dl>
+							<dl>
+								<dt>团队人数</dt>
+								<dd><label><input type="text" placeholder="请输入团队人数" name="employees"/></label> </dd>
+							</dl>
+							<dl>
+								<dt>项目阶段</dt>
+								<dd>
+									<select placeholder="请选择项目阶段" name="projectPhase" >
+										<option value="1">种子预备轮</option>
+										<option value="2">种子轮</option>
+										<option value="3">天使轮</option>
+										<option value="4">A轮</option>
+										<option value="5">B轮</option>
+										<option value="6">其他</option>
+
+									</select>
+								</dd>
+							</dl>
+							<dl>
+								<dt>产品阶段</dt>
+								<dd>
+									<select placeholder="请选择阶段" name="productPhase">
+										<option value="1">客户开发</option>
+										<option value="2">研究开发</option>
+										<option value="3">临床试验</option>
+										<option value="4">内部测试版</option>
+										<option value="5">公开测试版</option>
+										<option value="6">已发行</option>
+										<option value="7">其他</option>
+									</select>
+								</dd>
+							</dl>
+							<dl>
+								<dt>您的产品是否有获得以下标准？</dt>
+								<dd>
+									<select placeholder="请选择标准" name="standard">
+										<option value="1">欧盟 CE 认证</option>
+										<option value="2">美国 FDA 认证</option>
+										<option value="3">EMA 认证</option>
+										<option value="4">CFDA 认证 （中国国家食品药品监督管理总局）</option>
+										<option value="5">上述认证过程中</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+			<div class="clear"></div>
+						<dl>
+							<dt>公司简介<span>（100字以内）</span></dt>
+							<dd><textarea name="about"></textarea> </dd>
+						</dl>
+			<div class="choice">
+							<p>如果方便，请告知我们上一轮您获得的融资数额。</p>
+							<p>
+								<input type="radio" name="lastInvstAmount" checked="checked" value="1"/>是
+								<input type="radio" name="lastInvstAmount" value="2"/>否
+							</p>
+						</div>
+			<div class="choice">
+							<p>您现在是否有加入其他孵化器或者加速器中？</p>
+							<p>
+								<input type="radio" name="isSpace" checked="checked" value="1"/>是
+								<input type="radio" name="isSpace" value="2"/>否
+							</p>
+						</div>
+			<div class="apyTop">
+							<dl>
+								<dt>您的姓名</dt>
+								<dd><label><input type="text" placeholder="请输入姓名" name="name" /> </label></dd>
+							</dl>
+							<dl>
+								<dt>您在公司的职务</dt>
+								<dd><label><input type="text" placeholder="请输入公司职务" name="position"/></label> </dd>
+							</dl>
+							<dl>
+								<dt>您的邮箱</dt>
+								<dd><label><input type="text" placeholder="请输入邮箱" name="email" /></label> </dd>
+							</dl>
+							<dl>
+								<dt>您的手机号</dt>
+								<dd><label><input type="text" placeholder="请输入手机号" name="phone"/> </label></dd>
+							</dl>
+							<dl>
+								<dt>您是如何得知太库？</dt>
+								<dd>
+									<select placeholder="请选择项目阶段" name="channel">
+										<option value="1">社交网络</option>
+										<option value="2">官网</option>
+										<option value="3">邮件</option>
+										<option value="4">朋友</option>
+										<option value="5">活动</option>
+										<option value="6">其他项目</option>
+										<option value="7">合作伙伴</option>
+										<option value="8">其他</option>
+									</select>
+								</dd>
+							</dl>
+						</div>
+			<div class="clear"></div>
+						<dl>
+							<dt>对于和太库合作,您有什么期望<span>（100字以内）</span></dt>
+							<dd><textarea name="expect"></textarea> </dd>
+						</dl>
+			<div class="clear"></div>
+			<div class="apyFile">
+                <dl>
+                    <i>文件上传</i>
+                        <input type="file" name="15"> <span class="file">请上传文件</span>
+                </dl>
+            </div>            
+            <div class="apyFile">
+                <dl>
+                    <i>文件上传1</i>
+                        <input type="file" name="16"> <span class="file">请上传文件</span>
+                </dl>
+            </div>
+
+			<input type="button" value="提交" id="FormSubmit"/>
+			
+		</form>
+
+	</div>
+	<div class="contact1">
+		<div>
+			<h2>联系方式:</h2>
+			<p>北京站 赵振业 +86 18515835907 zhenye.zhao@techcode.com</p>
+			<p>上海站 马宗虎 +86 18621277693 zonghu.ma@techcode.com</p>
+			<p>深圳站 朱东 +86 13823206885 seawater.zhu@techcode.com</p>
+			<p>南京站 周超 +86 13584082004 chao.zhou@techcode.com</p>
+			<p>特拉维夫站 Aviram +972 545 618479 aviram.sela@techcode.com</p>
+			<p>硅谷站 钟美立 meili.zhong@techcode.com</p>
+			<p>首尔站 沈载勋 +82 10 5132 5765 franz.sim@techcode.com</p>
+			<p>柏林站 Daniel daniel.lachmann@techcode.com</p>
+		</div>
+	</div>	
+	<div class="layer" id="message-layer">
+		<div class="apytip">
+			<p view="message">提交成功</p>
+			<input type="button" id="close-layer" value="关闭">
+		</div>
+	</div>
+	<!--h5 footer-->
+	<div class="h5_footer">
+		<p>北京市海淀区融科资讯中心B座11层</p>
+		<span>@2015 All Copyright Reserved By Techcode.com</span>
+	</div>
+	<!--h5 footer END-->
+	<!--底部-->
+	<div class="footer">
+		<div class="footerT">
+			<div class="footerTC">
+				<div class="footerTC_1">
+					<div class="bLogo"><img src="http://www.techcode.com/statics/taiku/v1/img/bLogo.png"></div>
+					<div class="cent">
+						<p>太库整合全球创新资源</p>
+						<p>提供从创业第一步到每一步的综合服务</p>
+						<p>提高创业成功率和周转率</p>
+					</div>
+					<div class="share">
+						<div class="weixin">
+							<img class="weixin1" src="http://www.techcode.com/statics/taiku/v1/img/weixn1.png" alt=""/>
+							<img class="weixin2" src="http://www.techcode.com/statics/taiku/v1/img/weixin2.png" alt=""/>
+							<div class="scan">
+								<div class="dy">
+									<img src="http://www.techcode.com/statics/taiku/v1/img/fw.gif" alt="" />
+									<p>订阅号</p>
+								</div>
+								<div class="fw">
+									<img src="http://www.techcode.com/statics/taiku/v1/img/dy.gif" alt="" />
+									<p>服务号</p>
+								</div>
+							</div>
+						</div>
+						<div class="weibo">
+							<img class="weibo1" src="http://www.techcode.com/statics/taiku/v1/img/weibo1.png" alt=""/>
+							<img class="weibo2" src="http://www.techcode.com/statics/taiku/v1/img/weibo2.png" alt=""/>
+						</div>
+
+					</div>
+				</div>
+				<div class="footerTC_2">
+					<dl>
+						<dt>关于我们</dt>
+						<dd><img src="http://www.techcode.com/statics/taiku/v1/img/xiahua2.png"/></dd>
+					</dl>
+					<ul>
+						<li><a href="http://www.techcode.com/index.php?m=content&c=index&a=lists&catid=9">关于太库</a></li>
+						<li><a href="http://www.techcode.com/index.php?m=content&c=taiku_job&a=list_job&catid=48">加入太库</a></li>
+						<li><a href="http://www.techcode.com/index.php?m=content&c=teacher_renzheng&a=teacher_list&catid=33">太库认证</a></li>
+						<li><a href="http://www.techcode.com/index.php?m=content&c=index&a=lists&catid=21">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="footerTC_3">
+					<dl>
+						<dt>联系我们</dt>
+						<dd><img src="http://www.techcode.com/statics/taiku/v1/img/xiahua2.png"/></dd>
+					</dl>
+					<ul>
+						<li><img src="http://www.techcode.com/statics/taiku/v1/img/location.png"><p>北京市海淀区科学院南路2号</p></li>
+						<li class="lo">融科资讯中心B座11层</li>
+						<li class="tel"><img src="http://www.techcode.com/statics/taiku/v1/img/tel.png"><p>010-56343666<br/>010-59222999</p></li>
+					</ul>
+				</div>
+				<div class="footerTC_4">
+					<dl class="kehu">
+						<dt>太库客户端</dt>
+						<dd><img src="http://www.techcode.com/statics/taiku/v1/img/xiahua2.png"/></dd>
+					</dl>
+					<div class="ban">
+						<dl class="L">
+							<dt>
+								<a href="http://act.techcode.com/download.html">
+									<img class="iphone1" src="http://www.techcode.com/statics/taiku/v1/img/iphone1.png">
+									<img class="iphone2" src="http://www.techcode.com/statics/taiku/v1/img/ipone2.png">
+								</a>
+							</dt>
+							<dd>iPhone版</dd>
+						</dl>
+						<dl class="R">
+							<dt>
+								<a href="http://act.techcode.com/download.html">
+									<img  class="android1" src="http://www.techcode.com/statics/taiku/v1/img/android1.png">
+									<img  class="android2" src="http://www.techcode.com/statics/taiku/v1/img/android2.png">
+								</a>
+							</dt>
+							<dd>Android版</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="footerB">
+				@2016 All Copyright Reserved By Techcode.com
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+
+	$(function () {
+		var layer = $('#message-layer');
+		var _screen = $(window).width();
+		var running = false;
+
+		$('#close-layer').click(function () {
+			layer.hide();
+		})
+
+		// 判断客户端来源
+		if (_screen > 300 && _screen < 900) {
+			$('#client').val('phone');
+		}
+
+		$('#post_form').submit(function () {
+
+			var form = new FormData(document.getElementById("post_form"));
+
+			if (running) {
+				return;
+			}
+
+			running = true;
+			$('#FormSubmit').val('提交中...');
+
+			$.ajax({
+
+				url: 'http://localhost:8090/api/sub_activity/apply',
+
+				type: "post",
+
+				data: form,
+
+				dataType: 'jsonp',
+
+				processData: false,
+
+				contentType: false,
+
+				success: function (json) {
+					running = false;
+					if (json.code >= 0) {
+						layer.find('p[view=message]').text('提交成功');
+						layer.show();
+						$('#post_form')[0].reset();
+					} else {
+						layer.find('p[view=message]').text(json.message);
+						layer.show();
+					}
+
+					$('#FormSubmit').val('提交');
+				}
+
+			});
+			return false;
+		});
+
+		$('#FormSubmit').click(function () {
+			$('#post_form').submit();
+
+		});
+	});
+
+</script>
+</html>
